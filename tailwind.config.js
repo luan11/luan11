@@ -11,6 +11,7 @@ module.exports = {
         l11LightGreen: '#A8FE75',
         l11Body: '#484848',
         l11Gray: '#727272',
+        l11GrayLight: '#EFEFEF',
         l11GrayLighten: '#F9F9F9',
       },
       boxShadow: {

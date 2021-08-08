@@ -11,6 +11,8 @@ export const Wrapper = tw.header`
 export const Container = tw.div`
   container
   mx-auto
+  lg:px-0
+  px-4
   grid
   lg:grid-cols-2
   grid-cols-1

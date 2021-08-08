@@ -12,6 +12,8 @@ export const Wrapper = tw.section`
 export const Container = tw.div`
   container
   mx-auto
+  lg:px-0
+  px-4
 `;
 
 const TwSkills = tw.ul`

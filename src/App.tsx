@@ -1,5 +1,6 @@
 import Header from './components/Header';
 import DevelopmentSkills from './components/DevelopmentSkills';
+import Studied from './components/Studied';
 
 function App() {
   return (
@@ -7,6 +8,7 @@ function App() {
       <Header />
       <main>
         <DevelopmentSkills />
+        <Studied />
       </main>
     </>
   );
