@@ -4,15 +4,18 @@ import styled from 'styled-components';
 export const Wrapper = tw.header`
   border-t-8
   border-l11AquaGreen
-  py-12
+  lg:py-12
+  py-6
 `;
 
 export const Container = tw.div`
   container
   mx-auto
   grid
-  grid-cols-2
+  lg:grid-cols-2
+  grid-cols-1
   gap-7
+  items-center
 `;
 
 export const DataWrapper = tw.div`
@@ -29,11 +32,18 @@ export const Picture = tw.img`
   border-l11LightGreen
   shadow-l11Soft
   object-cover
-  mr-7
+  lg:mr-7
+  lg:ml-0
+  mx-auto
 `;
 
 export const Data = styled.div`
   width: calc(100% - 224px - 28px);
+
+  @media (max-width: 1023px) {
+    width: 100%;
+    text-align: center;
+  }
 `;
 
 const TwName = tw.h1`
@@ -51,4 +61,24 @@ export const Role = tw.h4`
   text-xl
   leading-tight
   mb-2
+`;
+
+const TwAboutWrapper = tw.div`
+  text-l11Gray
+  leading-snug
+  text-base
+`;
+
+export const AboutWrapper = styled(TwAboutWrapper)`
+  p {
+    margin-bottom: 0.5rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    @media (max-width: 1023px) {
+      text-align: center;
+    }
+  }
 `;
