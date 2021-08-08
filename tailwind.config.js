@@ -13,6 +13,10 @@ module.exports = {
         l11Gray: '#727272',
         l11GrayLighten: '#F9F9F9',
       },
+      boxShadow: {
+        l11Basic: '0px 2px 6px rgba(0, 0, 0, 0.2)',
+        l11Soft: '0px 0px 10px rgba(0, 0, 0, 0.15)',
+      },
     },
   },
   variants: {
