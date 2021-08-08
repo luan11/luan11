@@ -1,8 +1,8 @@
-import { ReactNode } from 'react';
+import { HTMLAttributes, ReactNode } from 'react';
 
 import { StyledTitle } from './styles';
 
-interface TitleProps {
+interface TitleProps extends HTMLAttributes<HTMLHeadingElement> {
   color?: string;
   detailColor?: string;
   size?: string;
@@ -10,13 +10,21 @@ interface TitleProps {
   children: ReactNode;
 }
 
-function Title({ color, size, centered, detailColor, children }: TitleProps) {
+function Title({
+  color,
+  size,
+  centered,
+  detailColor,
+  children,
+  ...props
+}: TitleProps) {
   return (
     <StyledTitle
       color={color || `text-l11Body`}
       size={size || `text-xl`}
-      centered={centered}
+      centered={Number(!!centered)}
       detail={detailColor || `#A8FE75`}
+      {...props}
     >
       {children}
     </StyledTitle>

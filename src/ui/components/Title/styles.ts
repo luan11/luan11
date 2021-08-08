@@ -5,7 +5,7 @@ interface TwTitleProps {
   color: string;
   detail: string;
   size: string;
-  centered?: boolean;
+  centered: number;
 }
 
 const TwTitle = tw.h2<TwTitleProps>`
