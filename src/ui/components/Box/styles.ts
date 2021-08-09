@@ -6,6 +6,7 @@ const TwContainer = tw.div`
   rounded-lg
   border-2
   border-l11GrayLight
+  dark:border-l11Body
   flex
   flex-col
   items-center
@@ -26,6 +27,7 @@ export const Container = styled(TwContainer)`
 
 export const Title = tw.h3`
   text-l11Body
+  dark:text-l11GrayLight
   font-bold
   text-xl
   leading-tight
@@ -35,6 +37,7 @@ export const Title = tw.h3`
 
 export const Subtitle = tw.h5`
   text-l11Gray
+  dark:text-l11GrayLighten
   text-sm
   leading-tight
   cursor-text

@@ -5,6 +5,7 @@ const Li = tw.li`
   flex
   items-center
   text-l11Body
+  dark:text-l11GrayLight
   mb-1
   text-sm
   leading-snug

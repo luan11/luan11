@@ -6,6 +6,7 @@ export const Wrapper = tw.header`
   border-l11AquaGreen
   lg:py-12
   py-6
+  dark:bg-l11Gray
 `;
 
 export const Container = tw.div`
@@ -50,6 +51,7 @@ export const Data = styled.div`
 
 const TwName = tw.h1`
   text-l11Body
+  dark:text-l11GrayLight
   font-bold
   leading-tight
 `;
@@ -60,6 +62,7 @@ export const Name = styled(TwName)`
 
 export const Role = tw.h4`
   text-l11Gray
+  dark:text-l11GrayLighten
   text-xl
   leading-tight
   mb-2
@@ -67,6 +70,7 @@ export const Role = tw.h4`
 
 const TwAboutWrapper = tw.div`
   text-l11Gray
+  dark:text-l11GrayLighten
   leading-snug
   text-base
 `;

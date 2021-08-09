@@ -7,6 +7,7 @@ export const Wrapper = tw.section`
   pt-6
   pb-10
   bg-l11GrayLighten
+  dark:bg-l11Body
 `;
 
 export const Container = tw.div`
