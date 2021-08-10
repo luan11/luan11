@@ -19,10 +19,7 @@ function Header() {
     <Wrapper>
       <Container>
         <DataWrapper>
-          <Picture
-            src="https://via.placeholder.com/1000x500"
-            alt="Luan Novais"
-          />
+          <Picture src="assets/images/me.png" alt="Luan Novais" />
           <Data>
             <Name>Luan Novais</Name>
             <Role>ReactJS Developer</Role>

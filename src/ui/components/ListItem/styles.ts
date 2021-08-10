@@ -18,8 +18,6 @@ export const Container = styled(Li)`
 
   > svg {
     margin-right: 0.25rem;
-    width: 1rem;
-    height: 1rem;
 
     > path {
       fill: #19a6a5;

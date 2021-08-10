@@ -1,10 +1,12 @@
-import { ComponentType } from 'react';
+import { FunctionComponent, SVGProps } from 'react';
 import ListItem from './../ListItem';
 
 import { Container } from './styles';
 
 type ListItemProps = {
-  Icon: ComponentType;
+  Icon: FunctionComponent<SVGProps<SVGSVGElement>>;
+  iconSize?: [number, number];
+  iconViewBox?: [number, number];
   content: string;
   url?: string;
   target?: string;

@@ -1,10 +1,12 @@
-import { ComponentType } from 'react';
+import { FunctionComponent, SVGProps } from 'react';
 import Parser from 'html-react-parser';
 
 import { Container } from './styles';
 
 interface ListItemProps {
-  Icon: ComponentType;
+  Icon: FunctionComponent<SVGProps<SVGSVGElement>>;
+  iconSize?: [number, number];
+  iconViewBox?: [number, number];
   content: string;
   url?: string;
   target?: string;
@@ -13,11 +15,16 @@ interface ListItemProps {
 
 function ListItem({
   Icon,
+  iconSize,
+  iconViewBox,
   content,
   url,
   target,
   highlightedText,
 }: ListItemProps) {
+  const [iconWidth, iconHeight] = iconSize || [16, 16];
+  const [iconViewBoxWidth, iconViewBoxHeight] = iconViewBox || [16, 16];
+
   const highlightedTextRegExp =
     highlightedText && new RegExp(`(${highlightedText})`);
   const contentWithHighlightedText =
@@ -36,7 +43,11 @@ function ListItem({
 
   return (
     <Container>
-      <Icon />
+      <Icon
+        viewBox={`0 0 ${iconViewBoxWidth} ${iconViewBoxHeight}`}
+        width={iconWidth}
+        height={iconHeight}
+      />
       {renderContent}
     </Container>
   );

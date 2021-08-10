@@ -1,10 +1,12 @@
-import { ComponentType } from 'react';
+import { FunctionComponent, SVGProps } from 'react';
 import { ReactComponent as IconEmail } from './assets/icons/ic24-email.svg';
 import { ReactComponent as IconMap } from './assets/icons/ic24-map.svg';
 import { ReactComponent as IconSuitcase } from './assets/icons/ic24-suitcase.svg';
 
 type ListItem = {
-  Icon: ComponentType;
+  Icon: FunctionComponent<SVGProps<SVGSVGElement>>;
+  iconSize?: [number, number];
+  iconViewBox?: [number, number];
   content: string;
   url?: string;
   target?: string;
@@ -14,8 +16,8 @@ type ListItem = {
 const contactList: ListItem[] = [
   {
     Icon: IconEmail,
-    content: 'oi@luandev.ml',
-    url: 'mailto:oi@luandev.ml',
+    content: 'luan-novais11@outlook.com',
+    url: 'mailto:luan-novais11@outlook.com',
   },
   {
     Icon: IconMap,
