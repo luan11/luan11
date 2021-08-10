@@ -1,4 +1,4 @@
-import { ComponentType } from 'react';
+import { FunctionComponent, SVGProps } from 'react';
 import { ReactComponent as IconHtml5 } from './assets/icons/html5.svg';
 import { ReactComponent as IconCss3 } from './assets/icons/css3.svg';
 import { ReactComponent as IconJavaScript } from './assets/icons/javascript.svg';
@@ -9,7 +9,9 @@ import { ReactComponent as IconWordPress } from './assets/icons/wordpress.svg';
 import { ReactComponent as IconGit } from './assets/icons/git.svg';
 
 type Skill = {
-  Icon: ComponentType;
+  Icon: FunctionComponent<SVGProps<SVGSVGElement>>;
+  iconSize?: [number, number];
+  iconViewBox?: [number, number];
   name: string;
   experience: string;
   empty?: boolean;

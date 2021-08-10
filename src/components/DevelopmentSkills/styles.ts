@@ -81,8 +81,6 @@ export const Skill = styled(TwSkill)`
   }
 
   > svg {
-    width: 80px;
-    height: 80px;
     transition: transform 0.4s ease-in-out;
   }
 

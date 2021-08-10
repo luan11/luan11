@@ -1,4 +1,5 @@
 {
+  "homepage": "https://luan11.github.io/luan11",
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
@@ -23,7 +24,9 @@
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -46,6 +49,7 @@
   "devDependencies": {
     "@types/styled-components": "^5.1.12",
     "autoprefixer": "^9",
+    "gh-pages": "^3.2.3",
     "postcss": "^7",
     "tailwind-styled-components": "^2.0.3",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat"

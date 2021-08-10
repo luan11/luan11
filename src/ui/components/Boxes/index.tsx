@@ -1,10 +1,12 @@
-import { ComponentType } from 'react';
+import { ComponentType, FunctionComponent, SVGProps } from 'react';
 import Box from './../Box';
 
 import { Container } from './styles';
 
 type BoxProps = {
-  Icon: ComponentType;
+  Icon: ComponentType | FunctionComponent<SVGProps<SVGSVGElement>>;
+  iconSize?: [number, number];
+  iconViewBox?: [number, number];
   title: string;
   subtitle: string;
 };

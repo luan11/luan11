@@ -1,8 +1,10 @@
-import { ComponentType } from 'react';
+import { FunctionComponent, SVGProps } from 'react';
 import { ReactComponent as IconBook } from './assets/icons/book.svg';
 
 type Education = {
-  Icon: ComponentType;
+  Icon: FunctionComponent<SVGProps<SVGSVGElement>>;
+  iconSize?: [number, number];
+  iconViewBox?: [number, number];
   course: string;
   about: string;
 };

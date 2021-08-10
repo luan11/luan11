@@ -13,10 +13,22 @@ function DevelopmentSkills() {
         </Title>
         <Skills>
           {sectionDevelopmentSkills.map(
-            ({ empty, Icon, name, experience }, index) =>
-              !empty ? (
+            (
+              { empty, Icon, iconSize, iconViewBox, name, experience },
+              index
+            ) => {
+              const [iconWidth, iconHeight] = iconSize || [80, 80];
+              const [iconViewBoxWidth, iconViewBoxHeight] = iconViewBox || [
+                80, 80,
+              ];
+
+              return !empty ? (
                 <Skill key={index}>
-                  <Icon />
+                  <Icon
+                    viewBox={`0 0 ${iconViewBoxWidth} ${iconViewBoxHeight}`}
+                    width={iconWidth}
+                    height={iconHeight}
+                  />
                   <div className="popover">
                     <h6>{name}</h6>
                     <p>experience about {experience}</p>
@@ -24,7 +36,8 @@ function DevelopmentSkills() {
                 </Skill>
               ) : (
                 <li key={index} />
-              )
+              );
+            }
           )}
         </Skills>
       </Container>
