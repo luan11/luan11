@@ -139,7 +139,7 @@ export const Skill = styled(TwSkill)`
         z-index 0s;
       transform: translateY(0);
       opacity: 1;
-      z-index: 1;
+      z-index: 2;
     }
   }
 `;

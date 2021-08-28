@@ -7,6 +7,8 @@ import { ReactComponent as IconPhp } from './assets/icons/php.svg';
 import { ReactComponent as IconReact } from './assets/icons/react.svg';
 import { ReactComponent as IconWordPress } from './assets/icons/wordpress.svg';
 import { ReactComponent as IconGit } from './assets/icons/git.svg';
+import { ReactComponent as IconSass } from './assets/icons/sass.svg';
+import { ReactComponent as IconNodeJS } from './assets/icons/nodejs.svg';
 
 type Skill = {
   Icon: FunctionComponent<SVGProps<SVGSVGElement>>;
@@ -44,10 +46,11 @@ const developmentSkills: Skill[] = [
     experience: '+3 years',
   },
   {
-    Icon: IconHtml5,
-    name: '',
-    experience: '',
-    empty: true,
+    Icon: IconNodeJS,
+    name: 'Node.js',
+    experience:
+      '+3 years, biggest usage is about configuring bundlers and development of simple APIs for learning',
+    iconViewBox: [45, 50],
   },
   {
     Icon: IconReact,
@@ -65,10 +68,10 @@ const developmentSkills: Skill[] = [
     experience: '+3 years',
   },
   {
-    Icon: IconHtml5,
-    name: '',
-    experience: '',
-    empty: true,
+    Icon: IconSass,
+    name: 'Sass',
+    experience: '+2 years',
+    iconViewBox: [45, 50],
   },
 ];
 
