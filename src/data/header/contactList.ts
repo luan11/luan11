@@ -16,8 +16,8 @@ type ListItem = {
 const contactList: ListItem[] = [
   {
     Icon: IconEmail,
-    content: 'luan-novais11@outlook.com',
-    url: 'mailto:luan-novais11@outlook.com',
+    content: 'oi@luancode.dev.br',
+    url: 'mailto:oi@luancode.dev.br',
   },
   {
     Icon: IconMap,

@@ -1,6 +1,7 @@
 import sectionDevelopmentSkills from './../../data/sections/developmentSkills';
 
 import Title from '../../ui/components/Title';
+import Tip from '../../ui/components/Tip';
 
 import { Wrapper, Container, Skills, Skill } from './styles';
 
@@ -11,6 +12,12 @@ function DevelopmentSkills() {
         <Title detailColor="#19A6A5" centered size="text-2xl" className="mb-6">
           Main Development Skills
         </Title>
+        <Tip
+          title="🌟 Click on the Skill"
+          text="On click, you can see more information about the Skill."
+          onlyMobile
+          width={[`w-full`, `w-3/4`, `w-full`]}
+        />
         <Skills>
           {sectionDevelopmentSkills.map(
             (

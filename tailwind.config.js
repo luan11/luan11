@@ -1,3 +1,5 @@
+const colors = require('tailwindcss/colors');
+
 module.exports = {
   purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
   darkMode: false, // or 'media' or 'class'
@@ -13,6 +15,7 @@ module.exports = {
         l11Gray: '#727272',
         l11GrayLight: '#EFEFEF',
         l11GrayLighten: '#F9F9F9',
+        cyan: colors.cyan,
       },
       boxShadow: {
         l11Basic: '0px 2px 6px rgba(0, 0, 0, 0.2)',
