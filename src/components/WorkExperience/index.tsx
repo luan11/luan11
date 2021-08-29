@@ -1,3 +1,5 @@
+import workExperience from '../../data/sections/workExperience';
+
 import Title from '../../ui/components/Title';
 import { ReactComponent as IconSuitcase } from './assets/icons/suitcase.svg';
 import { ReactComponent as IconCalendar } from './assets/icons/calendar.svg';
@@ -22,33 +24,32 @@ function WorkExperience() {
         </Title>
 
         <Worked>
-          <Work>
-            <WorkTitle
-              size="text-xl"
-              className="mb-6"
-              color="text-white"
-              detailHeight={2}
-            >
-              Role
-            </WorkTitle>
-            <WorkInfoList>
-              <WorkInfoItem>
-                <IconSuitcase />
-                Company
-              </WorkInfoItem>
+          {workExperience.map(
+            ({ role, company, time: [from, to], about }, index) => (
+              <Work key={index}>
+                <WorkTitle
+                  size="text-xl"
+                  className="mb-6"
+                  color="text-white"
+                  detailHeight={2}
+                >
+                  {role}
+                </WorkTitle>
+                <WorkInfoList>
+                  <WorkInfoItem>
+                    <IconSuitcase />
+                    {company}
+                  </WorkInfoItem>
 
-              <WorkInfoItem>
-                <IconCalendar />
-                2021 - Present
-              </WorkInfoItem>
-            </WorkInfoList>
-            <WorkAbout>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla
-              error voluptate maxime similique, reiciendis officia inventore
-              iusto neque quo excepturi non in aspernatur nobis iure laborum
-              harum ut quidem magni?
-            </WorkAbout>
-          </Work>
+                  <WorkInfoItem>
+                    <IconCalendar />
+                    {from} - {to}
+                  </WorkInfoItem>
+                </WorkInfoList>
+                <WorkAbout>{about}</WorkAbout>
+              </Work>
+            )
+          )}
         </Worked>
       </Container>
     </Wrapper>

@@ -26,7 +26,7 @@ function Title({
       size={size || `text-xl`}
       centered={Number(!!centered)}
       detail={detailColor || `#A8FE75`}
-      detailHeight={detailHeight ?? 4}
+      $detailHeight={detailHeight ?? 4}
       {...props}
     >
       {children}
