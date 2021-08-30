@@ -30,13 +30,23 @@ function DevelopmentSkills() {
               ];
 
               return !empty ? (
-                <Skill key={index}>
+                <Skill
+                  key={index}
+                  data-popover={`experience about ${experience}`}
+                  id={`skill${index}`}
+                  aria-expanded={false}
+                  role="button"
+                >
                   <Icon
                     viewBox={`0 0 ${iconViewBoxWidth} ${iconViewBoxHeight}`}
                     width={iconWidth}
                     height={iconHeight}
                   />
-                  <div className="popover">
+                  <div
+                    className="popover"
+                    aria-labelledby={`skill${index}`}
+                    role="region"
+                  >
                     <h6>{name}</h6>
                     <p>experience about {experience}</p>
                   </div>
