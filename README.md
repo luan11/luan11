@@ -10,7 +10,7 @@ My name is Luan Novais, I'm **Web Developer**. I work using some these technolog
 
 ## Contact me
 
-- 📧 [oi@luancode.dev.br](mailto:oi@luancode.dev.br)
+- 📧 [hello@luancode.dev.br](mailto:hello@luancode.dev.br)
 
 ---
 
