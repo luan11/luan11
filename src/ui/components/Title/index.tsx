@@ -5,6 +5,7 @@ import { StyledTitle } from './styles';
 interface TitleProps extends HTMLAttributes<HTMLHeadingElement> {
   color?: string;
   detailColor?: string;
+  detailHeight?: number;
   size?: string;
   centered?: boolean;
   children: ReactNode;
@@ -15,6 +16,7 @@ function Title({
   size,
   centered,
   detailColor,
+  detailHeight,
   children,
   ...props
 }: TitleProps) {
@@ -24,6 +26,7 @@ function Title({
       size={size || `text-xl`}
       centered={Number(!!centered)}
       detail={detailColor || `#A8FE75`}
+      $detailHeight={detailHeight ?? 4}
       {...props}
     >
       {children}

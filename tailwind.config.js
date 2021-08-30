@@ -7,6 +7,16 @@ module.exports = {
     fontFamily: {
       sans: ['Raleway', 'sans-serif'],
     },
+    colors: {
+      cyan: colors.cyan,
+      black: colors.black,
+      white: colors.white,
+      gray: colors.trueGray,
+      indigo: colors.indigo,
+      red: colors.rose,
+      yellow: colors.amber,
+      green: colors.green,
+    },
     extend: {
       colors: {
         l11AquaGreen: '#19A6A5',
@@ -15,7 +25,6 @@ module.exports = {
         l11Gray: '#727272',
         l11GrayLight: '#EFEFEF',
         l11GrayLighten: '#F9F9F9',
-        cyan: colors.cyan,
       },
       boxShadow: {
         l11Basic: '0px 2px 6px rgba(0, 0, 0, 0.2)',

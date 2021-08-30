@@ -4,6 +4,7 @@ import styled from 'styled-components';
 interface TwTitleProps {
   color: string;
   detail: string;
+  $detailHeight: number;
   size: string;
   centered: number;
 }
@@ -26,7 +27,7 @@ export const StyledTitle = styled(TwTitle)`
     left: 0;
     bottom: 0;
     margin: 0 auto;
-    height: 4px;
+    height: ${({ $detailHeight }) => $detailHeight}px;
     width: 75px;
     background-color: ${({ detail }) => detail};
     ${({ centered }) => (centered ? `right: 0;` : ``)}

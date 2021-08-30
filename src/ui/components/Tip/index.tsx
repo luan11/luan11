@@ -17,9 +17,9 @@ function Tip({ title, text, type, onlyMobile, width }: TipProps) {
 
   return (
     <Container
-      type={type ?? defaultType}
-      onlyMobile={!!onlyMobile}
-      width={width ?? [`w-full`, `w-full`, `w-full`]}
+      $type={type ?? defaultType}
+      $onlyMobile={!!onlyMobile}
+      $width={width ?? [`w-full`, `w-full`, `w-full`]}
     >
       <Title>{title}</Title>
       {text && <Text>{text}</Text>}
