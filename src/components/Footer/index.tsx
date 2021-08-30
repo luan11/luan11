@@ -4,7 +4,7 @@ function Footer() {
   return (
     <Container>
       <P>
-        Developed by <Link href="https://me.luancode.dev.br/">Luan Novais</Link>
+        Developed by <Link href="https://luancode.dev.br/">Luan Novais</Link>
       </P>
     </Container>
   );

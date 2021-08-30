@@ -1,5 +1,5 @@
 import tw from 'tailwind-styled-components';
-import { TIP_COLORS } from '../../../constants';
+import { TIP_TYPES } from '../../../constants';
 
 interface ContainerProps {
   $width: [string, string, string];
@@ -18,9 +18,38 @@ export const Container = tw.div<ContainerProps>`
     lg:${$width[0]}
     sm:${$width[1]}
     ${$width[2]}
-    bg-${TIP_COLORS[$type]}-100
-    border-${TIP_COLORS[$type]}-200
-    text-${TIP_COLORS[$type]}-700
+    ${
+      $type === TIP_TYPES.INFO &&
+      `
+      bg-cyan-100
+      border-cyan-200
+      text-cyan-700
+    `
+    }
+    ${
+      $type === TIP_TYPES.ERROR &&
+      `
+      bg-red-100
+      border-red-200
+      text-red-700
+    `
+    }
+    ${
+      $type === TIP_TYPES.WARNING &&
+      `
+      bg-yellow-100
+      border-yellow-200
+      text-yellow-700
+    `
+    }
+    ${
+      $type === TIP_TYPES.SUCCESS &&
+      `
+      bg-green-100
+      border-green-200
+      text-green-700
+    `
+    }
 
     ${$onlyMobile && `lg:hidden`}
   `}
