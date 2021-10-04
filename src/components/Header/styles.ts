@@ -3,10 +3,10 @@ import styled from 'styled-components';
 
 export const Wrapper = tw.header`
   border-t-8
-  border-l11AquaGreen
+  border-l11Gray
   lg:py-12
   py-6
-  dark:bg-l11Gray
+  bg-l11Body
 `;
 
 export const Container = tw.div`
@@ -31,8 +31,8 @@ export const Picture = tw.img`
   rounded-full
   w-56
   h-56
-  border-4
-  border-l11LightGreen
+  border-8
+  border-l11Gray
   shadow-l11Soft
   object-cover
   lg:mr-7
@@ -50,8 +50,7 @@ export const Data = styled.div`
 `;
 
 const TwName = tw.h1`
-  text-l11Body
-  dark:text-l11GrayLight
+  text-l11Primary
   font-bold
   leading-tight
 `;
@@ -61,18 +60,16 @@ export const Name = styled(TwName)`
 `;
 
 export const Role = tw.h4`
-  text-l11Gray
-  dark:text-l11GrayLighten
+  text-l11GrayLight
   text-xl
   leading-tight
-  mb-2
+  mb-4
 `;
 
 const TwAboutWrapper = tw.div`
-  text-l11Gray
-  dark:text-l11GrayLighten
+  text-l11GrayLight
   leading-snug
-  text-base
+  text-lg
 `;
 
 export const AboutWrapper = styled(TwAboutWrapper)`

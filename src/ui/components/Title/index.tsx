@@ -22,10 +22,10 @@ function Title({
 }: TitleProps) {
   return (
     <StyledTitle
-      color={color || `text-l11Body dark:text-l11GrayLight`}
-      size={size || `text-xl`}
+      color={color || `text-l11GrayLighten`}
+      size={size || `text-2xl`}
       centered={Number(!!centered)}
-      detail={detailColor || `#A8FE75`}
+      detail={detailColor || `#06D6A0`}
       $detailHeight={detailHeight ?? 4}
       {...props}
     >

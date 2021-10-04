@@ -9,7 +9,7 @@ function Contact() {
   return (
     <Wrapper>
       <Container>
-        <Title centered size="text-2xl" className="mb-6" detailColor="#19A6A5">
+        <Title centered className="mb-6">
           Contact Me
         </Title>
 

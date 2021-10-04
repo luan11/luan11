@@ -19,7 +19,7 @@ function WorkExperience() {
   return (
     <Wrapper>
       <Container>
-        <Title centered size="text-2xl" className="mb-6" color="text-white">
+        <Title centered className="mb-6">
           Work Experience
         </Title>
 

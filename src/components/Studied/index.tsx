@@ -22,7 +22,7 @@ function Studied() {
     <>
       <Wrapper>
         <Container>
-          <Title centered size="text-2xl" className="mb-6">
+          <Title centered className="mb-6">
             Languages
           </Title>
           <Boxes items={parsedLanguages} gridColumns={2} />
@@ -31,12 +31,7 @@ function Studied() {
 
       <Wrapper className="pt-0">
         <Container>
-          <Title
-            detailColor="#19A6A5"
-            centered
-            size="text-2xl"
-            className="mb-6"
-          >
+          <Title centered className="mb-6">
             Education
           </Title>
           <Boxes items={parsedEducation} gridColumns={1} />
