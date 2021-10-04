@@ -4,10 +4,9 @@ import styled from 'styled-components';
 const Li = tw.li`
   flex
   items-center
-  text-l11Body
-  dark:text-l11GrayLight
+  text-l11GrayLight
   mb-1
-  text-sm
+  text-md
   leading-snug
 `;
 
@@ -20,7 +19,7 @@ export const Container = styled(Li)`
     margin-right: 0.25rem;
 
     > path {
-      fill: #19a6a5;
+      fill: #06d6a0;
     }
   }
 
@@ -28,7 +27,6 @@ export const Container = styled(Li)`
     transition: color 0.25s;
 
     &:hover {
-      color: #19a6a5;
       text-decoration: underline;
     }
   }
@@ -37,7 +35,7 @@ export const Container = styled(Li)`
     > a,
     > b {
       font-weight: 600;
-      color: #19a6a5;
+      color: #06d6a0;
     }
   }
 `;

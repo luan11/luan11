@@ -5,7 +5,7 @@ import Title from '../../ui/components/Title';
 
 export const Wrapper = tw.section`
   py-12
-  bg-l11AquaGreen
+  bg-l11Gray
 `;
 
 export const Container = tw.div`
@@ -25,6 +25,10 @@ export const Worked = tw.ul`
 export const Work = tw.li`
   lg:mb-0
   mb-7
+  rounded
+  p-4
+  shadow-md
+  bg-l11BodyBackground
 `;
 
 export const WorkTitle = styled(Title)`
@@ -58,7 +62,7 @@ export const WorkInfoItem = styled(TwWorkInfoItem)`
     margin-right: 0.25rem;
 
     > path {
-      fill: #a8fe75;
+      fill: #06d6a0;
     }
   }
 `;
@@ -66,5 +70,5 @@ export const WorkInfoItem = styled(TwWorkInfoItem)`
 export const WorkAbout = tw.p`
   text-white
   leading-tight
-  text-sm
+  text-base
 `;

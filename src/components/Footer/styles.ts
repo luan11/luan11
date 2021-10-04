@@ -7,16 +7,16 @@ export const Container = tw.footer`
   py-1
   px-4
   border-b-8
-  border-l11AquaGreen
-  bg-l11GrayLighten
+  border-l11Body
+  bg-l11BodyBackground
 `;
 
 export const P = tw.p`
-  text-xs
-  text-l11Body
+  text-sm
+  text-l11GrayLight
 `;
 
 export const Link = tw.a`
-  text-l11AquaGreen
+  text-l11Primary
   font-semibold
 `;

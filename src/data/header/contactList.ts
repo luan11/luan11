@@ -16,15 +16,18 @@ type ListItem = {
 const contactList: ListItem[] = [
   {
     Icon: IconEmail,
+    iconSize: [20, 20],
     content: 'hello@luancode.dev.br',
     url: 'mailto:hello@luancode.dev.br',
   },
   {
     Icon: IconMap,
+    iconSize: [20, 20],
     content: 'Guarulhos - SP / Brazil',
   },
   {
     Icon: IconSuitcase,
+    iconSize: [20, 20],
     content: 'Working on @Segware',
     url: 'https://segware.com/',
     target: '_blank',

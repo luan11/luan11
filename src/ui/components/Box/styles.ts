@@ -3,7 +3,6 @@ import styled from 'styled-components';
 
 const TwContainer = tw.div`
   rounded-lg
-  dark:border-l11Body
   flex
   flex-col
   items-center
@@ -11,6 +10,7 @@ const TwContainer = tw.div`
   text-center
   relative
   overflow-hidden
+  shadow-md
 `;
 
 export const Container = styled(TwContainer)`
@@ -23,7 +23,7 @@ export const Container = styled(TwContainer)`
     top: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to top, #19a6a5, #a8fe75);
+    background: linear-gradient(to top, #10b78b, #06d6a0);
     opacity: 0;
     transition: opacity 0.35s;
   }
@@ -38,9 +38,9 @@ export const Container = styled(TwContainer)`
     margin: auto;
     width: calc(100% - 4px);
     height: calc(100% - 4px);
-    background-color: #ffffff;
+    background-color: #484848;
     border-radius: 0.5rem;
-    border: 2px solid #efefef;
+    border: 2px solid #4f4f4f;
     transition: border 0.35s;
   }
 
@@ -63,11 +63,16 @@ export const Container = styled(TwContainer)`
     width: 32px;
     height: 32px;
   }
+
+  > svg {
+    path {
+      fill: #06d6a0;
+    }
+  }
 `;
 
 export const Title = tw.h3`
-  text-l11Body
-  dark:text-l11GrayLight
+  text-white
   font-bold
   text-xl
   leading-tight
@@ -75,8 +80,7 @@ export const Title = tw.h3`
 `;
 
 export const Subtitle = tw.h5`
-  text-l11Gray
-  dark:text-l11GrayLighten
-  text-sm
+  text-gray-200
+  text-base
   leading-tight
 `;

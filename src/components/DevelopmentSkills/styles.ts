@@ -6,7 +6,7 @@ export const Wrapper = tw.section`
   lg:pb-16
   pt-6
   pb-10
-  bg-l11GrayLighten
+  bg-l11BodyBackground
   dark:bg-l11Body
 `;
 
@@ -38,42 +38,21 @@ export const Skills = styled(TwSkills)`
 
 const TwSkill = tw.li`
   mx-auto
-  rounded-full
+  rounded
   flex
   justify-center
   items-center
   relative
-  bg-white
+  bg-l11Body
   lg:mb-0
   mb-6
+  shadow-2xl
 `;
 
 export const Skill = styled(TwSkill)`
-  width: 115px;
-  height: 115px;
+  width: 125px;
+  height: 125px;
   cursor: pointer;
-
-  &::before {
-    content: '';
-    position: absolute;
-    left: -2px;
-    top: -2px;
-    width: 119px;
-    height: 119px;
-    background: linear-gradient(to top, #19a6a5, #a8fe75);
-    border-radius: 9999px;
-  }
-
-  &::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #fff;
-    border-radius: 9999px;
-  }
 
   > * {
     position: relative;
@@ -85,14 +64,14 @@ export const Skill = styled(TwSkill)`
   }
 
   .popover {
-    background-color: rgba(0, 0, 0, 0.6);
-    border-radius: 8px;
+    background-color: rgba(26, 26, 26, 0.75);
+    border-radius: 0.25rem;
     padding: 8px;
     color: #fff;
     text-align: center;
     position: absolute;
     top: 90%;
-    width: 135px;
+    width: 150px;
     transform: translateY(-25%);
     opacity: 0;
     z-index: -1;
@@ -111,19 +90,19 @@ export const Skill = styled(TwSkill)`
       height: 0;
       border-left: 8px solid transparent;
       border-right: 8px solid transparent;
-      border-bottom: 8px solid rgba(0, 0, 0, 0.6);
+      border-bottom: 8px solid rgba(26, 26, 26, 0.75);
     }
 
     > h6 {
       font-weight: 700;
       margin-bottom: 0.25rem;
       line-height: 115%;
-      font-size: 0.875rem;
+      font-size: 1rem;
       cursor: text;
     }
 
     > p {
-      font-size: 0.725rem;
+      font-size: 0.85rem;
       line-height: 100%;
       cursor: text;
     }
@@ -131,7 +110,7 @@ export const Skill = styled(TwSkill)`
 
   &:hover {
     > svg {
-      transform: scale(0.9);
+      transform: scale(1.1);
     }
 
     .popover {

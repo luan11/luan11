@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 export const Wrapper = tw.section`
   py-12
-  dark:bg-l11Gray
+  bg-l11Body
 `;
 
 export const Container = tw.div`
@@ -30,7 +30,7 @@ export const ListItem = styled(TwListItem)`
 
   svg {
     path {
-      fill: #484848;
+      fill: #fafafa;
       transition: fill 0.35s ease;
     }
   }
@@ -38,7 +38,7 @@ export const ListItem = styled(TwListItem)`
   &:hover {
     svg {
       path {
-        fill: #19a6a5;
+        fill: #06d6a0;
       }
     }
   }

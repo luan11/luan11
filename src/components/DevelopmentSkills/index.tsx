@@ -9,7 +9,7 @@ function DevelopmentSkills() {
   return (
     <Wrapper>
       <Container>
-        <Title detailColor="#19A6A5" centered size="text-2xl" className="mb-6">
+        <Title detailColor="#06D6A0" centered className="mb-6">
           Main Development Skills
         </Title>
         <Tip
