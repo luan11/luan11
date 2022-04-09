@@ -9,6 +9,7 @@ import { ReactComponent as IconWordPress } from './assets/icons/wordpress.svg';
 import { ReactComponent as IconGit } from './assets/icons/git.svg';
 import { ReactComponent as IconSass } from './assets/icons/sass.svg';
 import { ReactComponent as IconNodeJS } from './assets/icons/nodejs.svg';
+import { ReactComponent as IconTestingLibrary } from './assets/icons/testinglibrary.svg';
 
 type Skill = {
   Icon: FunctionComponent<SVGProps<SVGSVGElement>>;
@@ -23,55 +24,61 @@ const developmentSkills: Skill[] = [
   {
     Icon: IconHtml5,
     name: 'HTML5',
-    experience: '+3 years',
+    experience: '+4 years',
   },
   {
     Icon: IconCss3,
     name: 'CSS3',
-    experience: '+3 years',
+    experience: '+4 years',
   },
   {
     Icon: IconJavaScript,
     name: 'JavaScript',
-    experience: '+3 years',
+    experience: '+4 years',
   },
   {
     Icon: IconTypeScript,
     name: 'TypeScript',
-    experience: '1 year',
+    experience: '2 years',
   },
   {
-    Icon: IconPhp,
-    name: 'PHP',
-    experience: '+3 years',
+    Icon: IconReact,
+    name: 'ReactJS',
+    experience: '2 years',
   },
   {
     Icon: IconNodeJS,
     name: 'Node.js',
     experience:
-      '+3 years, biggest usage is about configuring bundlers and development of simple APIs for learning',
+      '+4 years, biggest usage is about configuring bundlers and development of simple APIs for learning',
     iconViewBox: [45, 50],
-  },
-  {
-    Icon: IconReact,
-    name: 'ReactJS',
-    experience: '1 year',
-  },
-  {
-    Icon: IconWordPress,
-    name: 'WordPress',
-    experience: '+3 years',
-  },
-  {
-    Icon: IconGit,
-    name: 'Git',
-    experience: '+3 years',
   },
   {
     Icon: IconSass,
     name: 'Sass',
-    experience: '+2 years',
+    experience: '+3 years',
     iconViewBox: [45, 50],
+  },
+  {
+    Icon: IconPhp,
+    name: 'PHP',
+    experience: '+4 years',
+  },
+  {
+    Icon: IconWordPress,
+    name: 'WordPress',
+    experience: '+4 years',
+  },
+  {
+    Icon: IconGit,
+    name: 'Git',
+    experience: '+4 years',
+  },
+  {
+    Icon: IconTestingLibrary,
+    iconViewBox: [24, 24],
+    name: 'Testing Library',
+    experience: '1 year',
   },
 ];
 

@@ -19,7 +19,7 @@ export const Container = styled(Li)`
     margin-right: 0.25rem;
 
     > path {
-      fill: #06d6a0;
+      fill: #75fe9f;
     }
   }
 
@@ -35,7 +35,7 @@ export const Container = styled(Li)`
     > a,
     > b {
       font-weight: 600;
-      color: #06d6a0;
+      color: #75fe9f;
     }
   }
 `;

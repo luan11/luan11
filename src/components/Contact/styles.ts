@@ -38,7 +38,7 @@ export const ListItem = styled(TwListItem)`
   &:hover {
     svg {
       path {
-        fill: #06d6a0;
+        fill: #75fe9f;
       }
     }
   }

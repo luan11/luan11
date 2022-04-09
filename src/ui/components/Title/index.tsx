@@ -25,7 +25,7 @@ function Title({
       color={color || `text-l11GrayLighten`}
       size={size || `text-2xl`}
       centered={Number(!!centered)}
-      detail={detailColor || `#06D6A0`}
+      detail={detailColor || `#75fe9f`}
       $detailHeight={detailHeight ?? 4}
       {...props}
     >

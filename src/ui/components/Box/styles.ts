@@ -23,7 +23,7 @@ export const Container = styled(TwContainer)`
     top: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to top, #10b78b, #06d6a0);
+    background: linear-gradient(to top, #75fe9f, #052762);
     opacity: 0;
     transition: opacity 0.35s;
   }
@@ -38,9 +38,9 @@ export const Container = styled(TwContainer)`
     margin: auto;
     width: calc(100% - 4px);
     height: calc(100% - 4px);
-    background-color: #484848;
+    background-color: #2c403e;
     border-radius: 0.5rem;
-    border: 2px solid #4f4f4f;
+    border: 2px solid #485c5a;
     transition: border 0.35s;
   }
 
@@ -66,7 +66,7 @@ export const Container = styled(TwContainer)`
 
   > svg {
     path {
-      fill: #06d6a0;
+      fill: #75fe9f;
     }
   }
 `;

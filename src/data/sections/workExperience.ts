@@ -7,9 +7,15 @@ type WorkExperience = {
 
 const workExperience: WorkExperience[] = [
   {
+    role: `ReactJS Developer I`,
+    company: `Segware`,
+    time: [`2022`, `Present`],
+    about: `Co-work with the design squad for proposing a better product to final user, analysis viability of new ideas and always work to programming of (TDD practice focused) features, improvements and fix bugs.`,
+  },
+  {
     role: `Junior III ReactJS Developer`,
     company: `Segware`,
-    time: [`2021`, `Present`],
+    time: [`2021`, `2022`],
     about: `I actuate programming new features using TDD technique, refactor the old items and make continuous improvements in the application.`,
   },
   {

@@ -1,5 +1,19 @@
 import tw from 'tailwind-styled-components';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+
+const linearGradient = keyframes`
+  0% {
+    box-shadow: 0 0 10px rgb(117, 254, 159);
+  }
+
+  50% {
+    box-shadow: 0 0 24px rgb(5, 39, 98);
+  }
+  
+  100% {
+    box-shadow: 0 0 10px rgb(117, 254, 159);
+  }
+`;
 
 export const Wrapper = tw.header`
   border-t-8
@@ -27,17 +41,21 @@ export const DataWrapper = tw.div`
   items-center
 `;
 
-export const Picture = tw.img`
+const TwPicture = tw.img`
   rounded-full
   w-56
   h-56
   border-8
-  border-l11Gray
+  border-l11BodyBackground
   shadow-l11Soft
   object-cover
   lg:mr-7
   lg:ml-0
   mx-auto
+`;
+
+export const Picture = styled(TwPicture)`
+  animation: ${linearGradient} 4s linear infinite;
 `;
 
 export const Data = styled.div`
