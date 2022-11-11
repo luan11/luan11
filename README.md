@@ -1,6 +1,6 @@
 # Hi 👋
 
-My name is Luan Novais, I'm **Web Developer**. I work using some these technologies **HTML**, **CSS**, **JavaScript**, **TypeScript**, **PHP** and others. I like to learn about new things coming and now i'm currently learning hard about Testing Library.
+My name is Luan Novais, I'm **Web Developer**. I work using some these technologies **HTML**, **CSS**, **JavaScript**, **TypeScript**, **PHP** and others. I like to learn about new things coming.
 
 ## Goals
 
