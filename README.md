@@ -5,8 +5,11 @@ My name is Luan Novais, I'm **Web Developer**. I work using some these technolog
 ## Goals
 
 - [x] To learn and practice _ReactJS_ **🟢 Done**
-- [ ] To learn and practice _Testing Library_ **🔵 In Progress**
-- [ ] To learn about create an API using _Laravel_ **🟡 In queue**
+- [x] To learn and practice _Testing Library_ **🟢 Done**
+- [ ] To learn about _ReactJS_ project structure **🟡 Pending**
+- [ ] To learn and practice _Testing Library_ with _TypeScript_ **🟡 Pending**
+- [ ] To learn and practice about _Figma_ **🟡 Pending**
+- [ ] To learn about create an API using _Laravel_ **🟡 Pending**
 
 ## Contact me
 
