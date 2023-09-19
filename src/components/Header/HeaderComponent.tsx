@@ -12,7 +12,7 @@ import { Link } from '@/ui/components/link';
 const HeaderComponent = () => (
   <header className="container mx-auto flex justify-between items-center">
     <div className="text-stone-100 relative w-[112px]">
-      <Logo width="100%" height="auto" />
+      <Logo width="100%" height="100%" />
     </div>
 
     <nav className="flex items-center gap-3">
