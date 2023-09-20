@@ -7,9 +7,9 @@ const AboutComponent = () => (
         Hello, my name is{' '}
         <span className="text-green-500">
           <Typed
-            strings={[`luancode`, `luan`]}
-            typeSpeed={100}
-            backSpeed={75}
+            strings={[`luan`, `code`, `luancode`, `luan`]}
+            typeSpeed={75}
+            backSpeed={50}
           />
         </span>{' '}
         and now you're going to find out a little about me
