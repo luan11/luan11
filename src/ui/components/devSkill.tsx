@@ -19,12 +19,12 @@ export const DevSkill = ({
   <div
     {...props}
     className={twMerge(
-      `w-[224px] p-3 rounded flex flex-col gap-1 border-l-4 border-stone-100 text-stone-100 bg-zinc-700 shadow lowercase`,
+      `w-[224px] p-3 rounded flex flex-col gap-2 border-l-4 border-stone-100 text-stone-100 bg-zinc-700 shadow lowercase`,
       className
     )}
   >
     <h3 className="text-xl">{name}</h3>
-    <div className="text-green-500 flex items-center gap-4">
+    <div className="text-green-500 flex items-center gap-1">
       <StarHalfIcon size={20} />
       <div className="w-full h-2 rounded-full bg-gray-800 relative overflow-hidden">
         <Fade triggerOnce>
