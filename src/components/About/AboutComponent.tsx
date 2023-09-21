@@ -4,7 +4,7 @@ import Typed from 'react-typed';
 const AboutComponent = () => (
   <section className="container mx-auto grid grid-cols-12 gap-4">
     <div className="pt-6 flex flex-col gap-3 col-start-2 col-end-12 text-stone-100 text-base lowercase">
-      <AttentionSeeker effect="pulse">
+      <AttentionSeeker effect="pulse" triggerOnce>
         <h1 className="text-4xl">
           Hello, my name is{' '}
           <span className="text-green-500">
@@ -18,7 +18,7 @@ const AboutComponent = () => (
         </h1>
       </AttentionSeeker>
 
-      <Fade cascade delay={150}>
+      <Fade cascade delay={150} triggerOnce>
         <p>
           I have a degree in Software Analysis and Development, which provided
           me with a deep understanding of software engineering principles. Based
