@@ -6,7 +6,10 @@ export const Main = ({
   className,
   ...props
 }: ComponentProps<`main`>) => (
-  <main {...props} className={twMerge(`flex flex-grow`, className)}>
+  <main
+    {...props}
+    className={twMerge(`flex flex-col gap-8 flex-grow`, className)}
+  >
     {children}
   </main>
 );

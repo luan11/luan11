@@ -12,8 +12,8 @@
   "dependencies": {
     "lucide-react": "^0.279.0",
     "react": "^18.2.0",
+    "react-awesome-reveal": "^4.2.5",
     "react-dom": "^18.2.0",
-    "react-reveal": "^1.2.2",
     "react-typed": "^1.2.0",
     "tailwind-merge": "^1.14.0",
     "vite-plugin-svgr": "^3.2.0",

@@ -1,11 +1,11 @@
-import { ComponentProps, ReactNode } from 'react';
+import { ComponentProps } from 'react';
 import { twMerge } from 'tailwind-merge';
 
-type ButtonProps = {
-  children: ReactNode;
-} & ComponentProps<`button`>;
-
-export const Button = ({ className, children, ...props }: ButtonProps) => (
+export const Button = ({
+  className,
+  children,
+  ...props
+}: ComponentProps<`button`>) => (
   <button
     {...props}
     className={twMerge(
