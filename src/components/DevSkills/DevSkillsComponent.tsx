@@ -1,7 +1,6 @@
-import { Zoom } from 'react-awesome-reveal';
-
 import { DevSkill } from '@/ui/components/devSkill';
 import { Title } from '@/ui/components/title';
+import { Fade } from 'react-awesome-reveal';
 
 const DevSkillsComponent = () => (
   <section className="container mx-auto grid grid-cols-12 gap-4">
@@ -9,7 +8,7 @@ const DevSkillsComponent = () => (
       <Title>main development skills</Title>
 
       <div className="px-12 flex flex-wrap gap-6 justify-center">
-        <Zoom cascade damping={0.5} duration={500}>
+        <Fade duration={500}>
           <DevSkill
             className="border-yellow-400"
             name="javascript"
@@ -33,7 +32,7 @@ const DevSkillsComponent = () => (
           <DevSkill className="border-indigo-600" name="php" yearsExp={5} />
           <DevSkill className="border-orange-500" name="git" yearsExp={6} />
           <DevSkill className="border-blue-500" name="wordpress" yearsExp={5} />
-        </Zoom>
+        </Fade>
       </div>
     </div>
   </section>

@@ -1,10 +1,10 @@
-import { AttentionSeeker, Fade } from 'react-awesome-reveal';
+import { Fade, Slide } from 'react-awesome-reveal';
 import Typed from 'react-typed';
 
 const AboutComponent = () => (
   <section className="container mx-auto grid grid-cols-12 gap-4">
     <div className="pt-6 flex flex-col gap-3 col-start-2 col-end-12 text-stone-100 text-base lowercase">
-      <AttentionSeeker effect="pulse" triggerOnce>
+      <Slide direction="down" duration={250} triggerOnce>
         <h1 className="text-4xl">
           Hello, my name is{' '}
           <span className="text-green-500">
@@ -16,9 +16,9 @@ const AboutComponent = () => (
           </span>{' '}
           and now you're going to find out a little about me
         </h1>
-      </AttentionSeeker>
+      </Slide>
 
-      <Fade cascade delay={150} triggerOnce>
+      <Fade cascade delay={150} duration={400} triggerOnce>
         <p>
           I have a degree in Software Analysis and Development, which provided
           me with a deep understanding of software engineering principles. Based
