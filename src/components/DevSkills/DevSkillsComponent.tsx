@@ -1,14 +1,14 @@
 import { DevSkill } from '@/ui/components/devSkill';
 import { Title } from '@/ui/components/title';
-import { Fade } from 'react-awesome-reveal';
+import { Slide } from 'react-awesome-reveal';
 
 const DevSkillsComponent = () => (
   <section className="container mx-auto grid grid-cols-12 gap-4">
     <div className="pt-6 flex flex-col gap-8 items-center col-start-2 col-end-12">
       <Title>main development skills</Title>
 
-      <div className="px-12 flex flex-wrap gap-6 justify-center">
-        <Fade duration={500}>
+      <div className="px-3 flex flex-wrap gap-6 justify-center overflow-hidden">
+        <Slide direction="left" duration={600}>
           <DevSkill
             className="border-yellow-400"
             name="javascript"
@@ -32,7 +32,7 @@ const DevSkillsComponent = () => (
           <DevSkill className="border-indigo-600" name="php" yearsExp={5} />
           <DevSkill className="border-orange-500" name="git" yearsExp={6} />
           <DevSkill className="border-blue-500" name="wordpress" yearsExp={5} />
-        </Fade>
+        </Slide>
       </div>
     </div>
   </section>

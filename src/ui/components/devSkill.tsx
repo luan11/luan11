@@ -20,7 +20,7 @@ export const DevSkill = ({
   useEffect(() => {
     const delayedSetSkillExpTranslateX = setTimeout(
       () => setSkillExpTranslateX(100 - calcSkillExp(yearsExp)),
-      100
+      300
     );
 
     return () => {
@@ -32,7 +32,7 @@ export const DevSkill = ({
     <div
       {...props}
       className={twMerge(
-        `min-w-[224px] w-full p-3 rounded flex flex-col gap-2 border-l-4 border-stone-100 text-stone-100 bg-zinc-700 shadow lowercase`,
+        `w-[224px] p-3 rounded flex flex-col gap-2 border-l-4 border-stone-100 text-stone-100 bg-zinc-700 shadow lowercase`,
         className
       )}
     >
@@ -41,7 +41,7 @@ export const DevSkill = ({
         <StarHalfIcon size={20} />
         <div className="w-full h-2 rounded-full bg-gray-800 relative overflow-hidden">
           <span
-            className="absolute left-0 top-0 h-full w-full bg-green-500 transition-transform ease-linear duration-700"
+            className="absolute left-0 top-0 h-full w-full bg-green-500 transition-transform ease-linear duration-1000"
             style={{
               transform: `translateX(-${skillExpTranslateX}%)`,
             }}
