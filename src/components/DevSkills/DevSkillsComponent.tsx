@@ -8,7 +8,7 @@ const DevSkillsComponent = () => (
       <Title>main development skills</Title>
 
       <div className="px-3 flex flex-wrap gap-6 justify-center overflow-hidden">
-        <Slide direction="left" duration={600}>
+        <Slide direction="left" duration={600} triggerOnce>
           <DevSkill
             className="border-yellow-400"
             name="javascript"
