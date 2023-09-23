@@ -1,6 +1,21 @@
+import { Slide } from 'react-awesome-reveal';
+
 import { DevSkill } from '@/ui/components/devSkill';
 import { Title } from '@/ui/components/title';
-import { Slide } from 'react-awesome-reveal';
+
+const devSkills = [
+  { border: `border-yellow-400`, name: `javascript`, yearsExp: 6 },
+  { border: `border-blue-500`, name: `typescript`, yearsExp: 4 },
+  { border: `border-green-500`, name: `nodejs`, yearsExp: 5 },
+  { border: `border-orange-500`, name: `html`, yearsExp: 6 },
+  { border: `border-blue-500`, name: `css`, yearsExp: 6 },
+  { border: `border-rose-300`, name: `sass`, yearsExp: 5 },
+  { border: `border-sky-500`, name: `reactjs`, yearsExp: 4 },
+  { border: `border-red-600`, name: `testing library`, yearsExp: 3 },
+  { border: `border-indigo-600`, name: `php`, yearsExp: 5 },
+  { border: `border-orange-500`, name: `git`, yearsExp: 6 },
+  { border: `border-blue-500`, name: `wordpress`, yearsExp: 5 },
+];
 
 const DevSkillsComponent = () => (
   <section className="container mx-auto grid grid-cols-12 gap-4">
@@ -9,29 +24,14 @@ const DevSkillsComponent = () => (
 
       <div className="px-3 flex flex-wrap gap-6 justify-center overflow-hidden">
         <Slide direction="left" duration={600} triggerOnce>
-          <DevSkill
-            className="border-yellow-400"
-            name="javascript"
-            yearsExp={6}
-          />
-          <DevSkill
-            className="border-blue-500"
-            name="typescript"
-            yearsExp={4}
-          />
-          <DevSkill className="border-green-500" name="nodejs" yearsExp={5} />
-          <DevSkill className="border-orange-500" name="html" yearsExp={6} />
-          <DevSkill className="border-blue-500" name="css" yearsExp={6} />
-          <DevSkill className="border-rose-300" name="sass" yearsExp={5} />
-          <DevSkill className="border-sky-500" name="reactjs" yearsExp={4} />
-          <DevSkill
-            className="border-red-600"
-            name="testing library"
-            yearsExp={3}
-          />
-          <DevSkill className="border-indigo-600" name="php" yearsExp={5} />
-          <DevSkill className="border-orange-500" name="git" yearsExp={6} />
-          <DevSkill className="border-blue-500" name="wordpress" yearsExp={5} />
+          {devSkills.map(({ border, name, yearsExp }) => (
+            <DevSkill
+              key={name}
+              className={border}
+              name={name}
+              yearsExp={yearsExp}
+            />
+          ))}
         </Slide>
       </div>
     </div>
