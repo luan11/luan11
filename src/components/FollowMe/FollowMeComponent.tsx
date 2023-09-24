@@ -25,7 +25,7 @@ const socialMedias = [
 ];
 
 const FollowMeComponent = () => (
-  <section className="w-full bg-zinc-800 h-[200px] overflow-hidden">
+  <section className="2xl:w-full bg-zinc-800 h-[200px] overflow-hidden -mx-4 2xl:mx-0 px-4 2xl:px-0">
     <div className="container mx-auto flex items-center justify-end h-full py-6 relative">
       <img
         src={illustrationTechnologySrc}

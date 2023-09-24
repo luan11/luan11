@@ -22,6 +22,9 @@ export default {
       animation: {
         move: `move 5s linear infinite`,
       },
+      screens: {
+        '1xl': `1366px`,
+      },
     },
   },
   plugins: [],
