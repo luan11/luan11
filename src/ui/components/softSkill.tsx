@@ -6,7 +6,7 @@ type SoftSkillProps = {
 };
 
 export const SoftSkill = ({ icon, title }: SoftSkillProps) => (
-  <div className="flex flex-col items-center w-[320px] gap-2">
+  <div className="flex flex-col items-center lg:w-[320px] gap-2">
     <span className="text-green-500 p-3 bg-neutral-800 rounded shadow flex justify-center items-center">
       {icon}
     </span>

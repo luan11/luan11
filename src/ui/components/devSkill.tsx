@@ -32,7 +32,7 @@ export const DevSkill = ({
     <div
       {...props}
       className={twMerge(
-        `w-[224px] p-3 rounded flex flex-col gap-2 border-l-4 border-stone-100 text-stone-100 bg-zinc-700 shadow lowercase`,
+        `lg:w-[224px] p-3 rounded flex flex-col gap-2 border-l-4 border-stone-100 text-stone-100 bg-zinc-700 shadow lowercase`,
         className
       )}
     >

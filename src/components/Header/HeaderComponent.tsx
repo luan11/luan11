@@ -36,9 +36,9 @@ const HeaderComponent = () => {
 
       <div
         className={twMerge(
-          `fixed lg:relative top-0 right-0 w-full lg:w-auto h-full lg:h-auto -z-10 bg-zinc-900/80 lg:bg-unset flex lg:block justify-between items-start opacity-0 transition-opacity ease-linear`,
+          `fixed lg:relative top-0 right-0 w-full lg:w-auto h-full lg:h-auto -z-10 lg:z-0 bg-zinc-900/80 lg:bg-unset flex lg:block justify-between items-start opacity-0 lg:opacity-100 transition-opacity ease-linear`,
           isOpen && `z-10`,
-          isOpen && `opacity-1`
+          isOpen && `opacity-100`
         )}
         onClick={onToggle}
       >

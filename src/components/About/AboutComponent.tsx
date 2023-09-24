@@ -2,7 +2,7 @@ import { Fade, Slide } from 'react-awesome-reveal';
 import Typed from 'react-typed';
 
 const AboutComponent = () => (
-  <section className="container mx-auto grid grid-cols-12 gap-4">
+  <section className="container mx-auto lg:grid lg:grid-cols-12 gap-4">
     <div className="pt-6 flex flex-col gap-3 col-start-2 col-end-12 text-stone-100 text-base lowercase">
       <Slide direction="down" duration={250} triggerOnce>
         <h1 className="text-4xl">

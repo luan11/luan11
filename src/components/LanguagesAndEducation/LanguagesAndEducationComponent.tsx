@@ -35,12 +35,12 @@ const education = [
 ];
 
 const LanguagesAndEducationComponent = () => (
-  <section className="container mx-auto grid grid-cols-12 gap-4">
+  <section className="container mx-auto lg:grid lg:grid-cols-12 gap-4">
     <div className="pt-6 flex flex-col gap-8 items-center col-start-2 col-end-12 overflow-hidden">
       <Title>Languages & education</Title>
 
-      <Slide direction="left">
-        <div className="flex items-center justify-center gap-6">
+      <Slide direction="left" className="max-sm:!animate-none">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
           {languages.map(({ title, proficiency, customClassName }) => (
             <LanguageOrEducationBox
               key={title}
@@ -54,8 +54,8 @@ const LanguagesAndEducationComponent = () => (
         </div>
       </Slide>
 
-      <Slide direction="right">
-        <div className="flex items-center justify-center gap-6 px-3">
+      <Slide direction="right" className="max-sm:!animate-none">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-6 px-3">
           {education.map(
             ({ icon, title, formedBy, fromTo, customClassName }) => (
               <LanguageOrEducationBox

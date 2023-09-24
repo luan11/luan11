@@ -18,7 +18,7 @@ const devSkills = [
 ];
 
 const DevSkillsComponent = () => (
-  <section className="container mx-auto grid grid-cols-12 gap-4 overflow-hidden">
+  <section className="container mx-auto lg:grid lg:grid-cols-12 gap-4 overflow-hidden">
     <div className="pt-6 flex flex-col gap-8 items-center col-start-2 col-end-12">
       <Title>main development skills</Title>
 

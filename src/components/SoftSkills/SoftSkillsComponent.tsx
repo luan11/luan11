@@ -27,11 +27,11 @@ const softSkills = [
 ];
 
 const SoftSkillsComponent = () => (
-  <section className="container mx-auto grid grid-cols-12 gap-4 overflow-hidden">
+  <section className="container mx-auto lg:grid lg:grid-cols-12 gap-4 overflow-hidden">
     <div className="pt-6 flex flex-col gap-8 items-center col-start-2 col-end-12">
       <Title>main soft skills</Title>
 
-      <Slide direction="up">
+      <Slide direction="up" className="max-sm:!animate-none">
         <div className="px-3 flex flex-wrap gap-6 justify-center">
           {softSkills.map(({ icon, title }) => (
             <SoftSkill key={title} icon={icon} title={title} />

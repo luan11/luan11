@@ -26,14 +26,14 @@ const socialMedias = [
 
 const FollowMeComponent = () => (
   <section className="2xl:w-full bg-zinc-800 h-[200px] overflow-hidden -mx-4 2xl:mx-0 px-4 2xl:px-0">
-    <div className="container mx-auto flex items-center justify-end h-full py-6 relative">
+    <div className="container mx-auto flex items-center justify-center sm:justify-end h-full py-6 relative">
       <img
         src={illustrationTechnologySrc}
         alt="Illustration Technology"
-        className="w-[413px] absolute top-0 left-0 animate-move"
+        className="w-[413px] absolute top-0 -left-3/4 sm:left-0 sm:animate-move"
       />
 
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col gap-4 z-10">
         <Title>follow me</Title>
 
         <ul className="flex items-center justify-center gap-6 text-stone-100">

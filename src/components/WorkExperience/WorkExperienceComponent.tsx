@@ -44,16 +44,16 @@ const workExperiences = [
 ];
 
 const WorkExperienceComponent = () => (
-  <section className="container mx-auto grid grid-cols-12 gap-4">
+  <section className="container mx-auto lg:grid lg:grid-cols-12 gap-4">
     <div className="pt-6 flex flex-col gap-8 items-center col-start-2 col-end-12">
       <Title>WORK EXPERIENCE</Title>
 
-      <div className="flex justify-center gap-6 px-3 overflow-hidden">
+      <div className="flex justify-center flex-col sm:flex-row gap-6 px-3 overflow-hidden">
         <Fade>
           {workExperiences.map((workExperience) => (
             <WorkExperienceBox
               key={workExperience.companyName}
-              className="max-w-md"
+              className="lg:max-w-md"
               {...workExperience}
             />
           ))}
