@@ -29,7 +29,7 @@ export const WorkExperienceBox = ({
   <div
     {...props}
     className={twMerge(
-      `p-6 gap-4 flex flex-col flex-1 rounded border-4 border-neutral-800 lowercase text-stone-100`,
+      `p-6 gap-4 flex flex-col flex-1 h-full rounded border-4 border-neutral-800 lowercase text-stone-100`,
       className
     )}
   >
