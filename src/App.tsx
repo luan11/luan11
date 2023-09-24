@@ -1,22 +1,17 @@
-import Header from './components/Header';
-import DevelopmentSkills from './components/DevelopmentSkills';
-import Studied from './components/Studied';
-import WorkExperience from './components/WorkExperience';
-import Footer from './components/Footer';
-import Contact from './components/Contact';
+import { Header } from '@/components/Header';
+import { Home } from '@/pages/Home';
+import { Main } from '@/ui/components/main';
+import { Footer } from './components/Footer';
 
 function App() {
   return (
-    <>
+    <div className="bg-zinc-900 flex flex-col gap-8 w-full min-h-[100dvh] py-6 px-4 2xl:px-0">
       <Header />
-      <main>
-        <DevelopmentSkills />
-        <Studied />
-        <WorkExperience />
-        <Contact />
-        <Footer />
-      </main>
-    </>
+      <Main>
+        <Home />
+      </Main>
+      <Footer />
+    </div>
   );
 }
 
