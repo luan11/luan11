@@ -53,7 +53,7 @@ const WorkExperienceComponent = () => (
           {workExperiences.map((workExperience) => (
             <WorkExperienceBox
               key={workExperience.companyName}
-              className="lg:max-w-md"
+              className="lg:max-w-lg"
               {...workExperience}
             />
           ))}

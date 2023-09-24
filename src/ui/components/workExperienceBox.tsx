@@ -29,7 +29,7 @@ export const WorkExperienceBox = ({
   <div
     {...props}
     className={twMerge(
-      `p-6 gap-4 flex flex-col rounded border-4 border-neutral-800 lowercase text-stone-100`,
+      `p-6 gap-4 flex flex-col flex-1 rounded border-4 border-neutral-800 lowercase text-stone-100`,
       className
     )}
   >
@@ -41,27 +41,29 @@ export const WorkExperienceBox = ({
     </div>
 
     <div className="flex gap-3 flex-wrap">
-      {experiences.map(({ jobDescription, from, to }, idx) => (
-        <div
-          key={jobDescription}
-          className="flex gap-2 bg-indigo-500 rounded p-1"
-        >
-          <span className="text-lime-300">
-            {idx === 0 && to !== EXPERIENCE_TO_PRESENT && (
-              <FlagIcon size={20} />
-            )}
-            {idx !== 0 && to !== EXPERIENCE_TO_PRESENT && (
-              <TrendingUpIcon size={20} />
-            )}
-            {to === EXPERIENCE_TO_PRESENT && <FlameIcon size={20} />}
-          </span>
+      {experiences.map(({ jobDescription, from, to }, idx) => {
+        const isLast = experiences.length - 1 === idx;
 
-          <div>
-            <h4>{jobDescription}</h4>
-            <small className="text-lime-300 text-sm">{`${from} - ${to}`}</small>
+        return (
+          <div
+            key={jobDescription}
+            className="flex gap-2 bg-indigo-500 rounded p-1"
+          >
+            <span className="text-lime-300">
+              {isLast && <FlagIcon size={20} />}
+              {!isLast && to !== EXPERIENCE_TO_PRESENT && (
+                <TrendingUpIcon size={20} />
+              )}
+              {to === EXPERIENCE_TO_PRESENT && <FlameIcon size={20} />}
+            </span>
+
+            <div>
+              <h4>{jobDescription}</h4>
+              <small className="text-lime-300 text-sm">{`${from} - ${to}`}</small>
+            </div>
           </div>
-        </div>
-      ))}
+        );
+      })}
     </div>
   </div>
 );
