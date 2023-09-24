@@ -1,4 +1,4 @@
-import { Slide } from 'react-awesome-reveal';
+import { Fade } from 'react-awesome-reveal';
 
 import { DevSkill } from '@/ui/components/devSkill';
 import { Title } from '@/ui/components/title';
@@ -18,12 +18,12 @@ const devSkills = [
 ];
 
 const DevSkillsComponent = () => (
-  <section className="container mx-auto grid grid-cols-12 gap-4">
+  <section className="container mx-auto grid grid-cols-12 gap-4 overflow-hidden">
     <div className="pt-6 flex flex-col gap-8 items-center col-start-2 col-end-12">
       <Title>main development skills</Title>
 
-      <div className="px-3 flex flex-wrap gap-6 justify-center overflow-hidden">
-        <Slide direction="left" duration={600} triggerOnce>
+      <Fade>
+        <div className="px-3 flex flex-wrap gap-6 justify-center overflow-hidden">
           {devSkills.map(({ border, name, yearsExp }) => (
             <DevSkill
               key={name}
@@ -32,8 +32,8 @@ const DevSkillsComponent = () => (
               yearsExp={yearsExp}
             />
           ))}
-        </Slide>
-      </div>
+        </div>
+      </Fade>
     </div>
   </section>
 );

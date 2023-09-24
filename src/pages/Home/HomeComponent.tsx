@@ -3,6 +3,7 @@ import { DevSkills } from '@/components/DevSkills';
 import { FollowMe } from '@/components/FollowMe';
 import { LanguagesAndEducation } from '@/components/LanguagesAndEducation';
 import { SoftSkills } from '@/components/SoftSkills';
+import { WorkExperience } from '@/components/WorkExperience';
 
 const HomeComponent = () => (
   <>
@@ -11,6 +12,7 @@ const HomeComponent = () => (
     <SoftSkills />
     <FollowMe />
     <LanguagesAndEducation />
+    <WorkExperience />
   </>
 );
 
