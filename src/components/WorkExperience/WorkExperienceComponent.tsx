@@ -1,7 +1,9 @@
-import { Slide } from 'react-awesome-reveal';
+import { Fade } from 'react-awesome-reveal';
 
+import { Button } from '@/ui/components/button';
 import { Title } from '@/ui/components/title';
 import { WorkExperienceBox } from '@/ui/components/workExperienceBox';
+import { LinkedinIcon } from 'lucide-react';
 
 const workExperiences = [
   {
@@ -47,7 +49,7 @@ const WorkExperienceComponent = () => (
       <Title>WORK EXPERIENCE</Title>
 
       <div className="flex justify-center gap-6 px-3 overflow-hidden">
-        <Slide direction="left">
+        <Fade>
           {workExperiences.map((workExperience) => (
             <WorkExperienceBox
               key={workExperience.companyName}
@@ -55,8 +57,18 @@ const WorkExperienceComponent = () => (
               {...workExperience}
             />
           ))}
-        </Slide>
+        </Fade>
       </div>
+
+      <Button
+        className="bg-green-500 text-stone-100 border-0 hover:bg-green-600"
+        onClick={() =>
+          window.open(`https://www.linkedin.com/in/luan-novais11/`, `_blank`)
+        }
+      >
+        <LinkedinIcon size={16} />
+        <span>VIEW DETAILED</span>
+      </Button>
     </div>
   </section>
 );
