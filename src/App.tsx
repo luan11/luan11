@@ -1,7 +1,12 @@
+import ReactGA from 'react-ga4';
+
 import { Header } from '@/components/Header';
 import { Home } from '@/pages/Home';
 import { Main } from '@/ui/components/main';
 import { Footer } from './components/Footer';
+
+ReactGA.initialize(import.meta.env.VITE_GA_MEASUREMENT_ID);
+ReactGA.send('pageview');
 
 function App() {
   return (

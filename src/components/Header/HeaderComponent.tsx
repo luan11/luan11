@@ -7,6 +7,7 @@ import {
   XIcon,
 } from 'lucide-react';
 import { MouseEvent, useState } from 'react';
+import ReactGA from 'react-ga4';
 import { twMerge } from 'tailwind-merge';
 
 import { ReactComponent as Logo } from '@/assets/images/logo.svg';
@@ -23,6 +24,18 @@ const HeaderComponent = () => {
 
     setIsOpen(false);
   };
+
+  const onClickLinkWithGAEvent =
+    (eventName: string) => (e: MouseEvent<HTMLAnchorElement>) => {
+      e.preventDefault();
+
+      ReactGA.event(eventName);
+
+      window.open(
+        e.currentTarget.href,
+        e.currentTarget.getAttribute(`target`) ?? undefined
+      );
+    };
 
   return (
     <header className="container mx-auto flex justify-between items-center relative">
@@ -64,12 +77,19 @@ const HeaderComponent = () => {
             <span>Link Tree</span>
           </Link>
 
-          <Link href="https://tools.luancode.dev.br/" target="_blank">
+          <Link
+            href="https://tools.luancode.dev.br/"
+            target="_blank"
+            onClick={onClickLinkWithGAEvent(`link_tools`)}
+          >
             <HammerIcon size={16} />
             <span>Tools</span>
           </Link>
 
-          <Link href="mailto:hello@luancode.dev.br">
+          <Link
+            href="mailto:hello@luancode.dev.br"
+            onClick={onClickLinkWithGAEvent(`link_contact`)}
+          >
             <MessageCircleIcon size={16} />
             <span>Contact</span>
           </Link>
