@@ -9,18 +9,27 @@ export default {
       keyframes: {
         move: {
           '0%, 100%': {
-            transform: `translate(10%, -10%)`,
+            transform: `translate(4px, -4px)`,
           },
           '50%': {
-            transform: `translate(5%, 5%)`,
+            transform: `translate(2px, 2px)`,
           },
           '75%': {
-            transform: `translate(-5%, 5%)`,
+            transform: `translate(-2px, 2px)`,
+          },
+        },
+        slide: {
+          from: {
+            transform: `translateX(4px)`,
+          },
+          to: {
+            transform: `translateX(-2px)`,
           },
         },
       },
       animation: {
         move: `move 5s linear infinite`,
+        slide: `slide 2s linear infinite alternate`,
       },
       screens: {
         '1xl': `1366px`,
