@@ -1,6 +1,6 @@
 import { GithubIcon, InstagramIcon, LinkedinIcon } from 'lucide-react';
 
-import illustrationTechnologySrc from '@/assets/images/illustration-technology.png';
+import { ReactComponent as IllustrationTechnology } from '@/assets/images/illustration-technology.svg';
 import { Title } from '@/ui/components/title';
 
 const socialMedias = [
@@ -27,11 +27,9 @@ const socialMedias = [
 const FollowMeComponent = () => (
   <section className="2xl:w-full bg-zinc-800 h-[200px] overflow-hidden -mx-4 2xl:mx-0 px-4 2xl:px-0">
     <div className="container mx-auto flex items-center justify-center sm:justify-end h-full py-6 relative">
-      <img
-        src={illustrationTechnologySrc}
-        alt="Illustration Technology"
-        className="w-[413px] absolute top-0 -left-3/4 sm:left-0 sm:animate-move"
-      />
+      <div className="w-[413px] absolute top-0 -left-3/4 sm:left-0">
+        <IllustrationTechnology width="100%" height="100%" />
+      </div>
 
       <div className="flex flex-col gap-4 z-10">
         <Title>follow me</Title>
